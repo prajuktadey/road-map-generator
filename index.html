@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoda - Your Learning Assistant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script type="module">
+        import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+        Chatbot.init({
+            chatflowid: "e9339ad6-cac0-4bd4-8975-3a0e3d66a906",
+            apiHost: "http://localhost:3000",
+        });
+
+        function openChatbox() {
+            Chatbot.open(); // Function to open the chatbox
+        }
+    </script>
+    
+    <nav>
+        <div class="logo">yoda</div>
+        <ul>
+            <li><a href="#about">about</a></li>
+            <li><a href="#contact">contact</a></li>
+            <li><a href="#" id="openChatbox">talk to yoda</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="left-section">
+            <h1>hi, i'm <b>yoda</b></h1>
+            <p>the ai assistant that creates personalized learning roadmaps for any job role you're interested in, available 24/7</p>
+            <p>whether you're exploring new careers or advancing in your current field, yoda helps you navigate the learning landscape</p>
+            <div class="icons">
+                <!-- Add icons here -->
+            </div>
+            <a href="#" class="cta" onclick="openChatbox()">try me now! <span class="arrow">→</span></a>
+            <p class="interaction-instructions">click on the chat bubble, drop in the job role you're applying for, and wait for a minute to get a curated roadmap :)</p>
+        </div>
+    </div>
+
+    <div id="about" class="about-section">
+        <h2>about yoda</h2>
+        <p>yoda is an ai-powered learning assistant designed to help you achieve your career goals by providing personalized learning roadmaps</p>
+        <p>With yoda, you can explore new career opportunities, gain new skills, and stay ahead in your field</p>
+    
+        <div class="cool-section">
+            <div class="cool-block">
+                <h3>imagine this</h3>
+                <p>feeling lost when starting to learn something new is a thing of the past. with my service, you simply drop in the job description of the role you want, and you'll get a curated list of links to paid/free courses, recent research articles, and a comprehensive roadmap, all in one place</p>
+            </div>
+            <div class="cool-block">
+                <h3>i provide insights into your career path</h3>
+                <p>based on the job descriptions you provide, i offer you curated learning indicators in real time. these indicators give you insights into the quality and relevance of the courses and articles, helping you anticipate what skills and knowledge will matter for your career now and in the future</p>
+            </div>
+            <div class="cool-block">
+                <h3>i make it easy for you</h3>
+                <p>i take away complexity and offer a managed service that includes everything necessary to deliver the best learning resources to you so you can focus on securing your dream job</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="contact-section">
+        <h2>yo, you can reach out to me</h2>
+        <p>made by prajukta during n&w s5</p>
+        <ul>
+            <p>for inquiries or collaborations, feel free to reach out:</p>
+            <li>email: <a href="mailto:your.email@example.com">theprajuktadey@gmail.com</a></li>
+            <li>linkedin: <a href="https://www.linkedin.com/in/prajuktadey/">drop a message</a></li>
+            <li>instagram: <a href="https://www.instagram.com/algorhythm201/">for all those N&W updates</a></li>
+            <!-- Add more contact details as needed -->
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
