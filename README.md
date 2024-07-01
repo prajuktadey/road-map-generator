@@ -8,7 +8,7 @@ This project utilizes advanced AI agents and web scraping tools to generate comp
 
 ### Workflow
 
-![Workflow](workflow.png)
+![Workflow](flowise-roadmap.png)
 
 ### Features
 
