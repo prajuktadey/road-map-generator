@@ -1,29 +1,56 @@
-# Road Map Generator
+# Yoda - Your Learning Assistant
 
-This project is designed to generate a comprehensive roadmap for achieving proficiency in a given job role. Utilizing advanced AI models and web scraping tools, it gathers information from multiple sources to provide a detailed plan, including necessary skills, resources, and learning materials. The project leverages Flowise AI to create an interactive, automated workflow.
+Yoda is an AI-powered learning assistant designed to create personalized learning roadmaps for any job role you're interested in. It helps you explore new career opportunities, gain new skills, and stay ahead in your field.
 
 ## Overview
 
-In this system, agents are configured to work together to complete a software development cycle. Each agent has a distinct role and set of tasks, contributing to the overall process.
+This project utilizes advanced AI agents and web scraping tools to generate comprehensive roadmaps for achieving proficiency in a given job role. It leverages Flowise AI to create an interactive, automated workflow.
 
-Below is a visual representation of the workflow:
+### Workflow
 
-![Workflow](flowise-roadmap.png)
+![Workflow](workflow.png)
 
-## Features
+### Features
 
-- **ChatMistralAI**: Utilizes the Mistral language model to provide conversational AI capabilities.
-- **Supervisor**: Manages the flow and coordinates tasks among different workers.
-- **Roadmap Generator**: Develops a structured roadmap for achieving job proficiency.
-- **Web Scraper**: Collects online resources, articles, and courses related to the job.
-- **Research Articles**: Searches for recent research papers and academic journals.
-- **YouTube Link Generator**: Finds educational YouTube videos related to job skills.
+- **ChatMistralAI:** Acts as the conversational AI agent to interact with users and gather job role inputs.
+- **Supervisor Agent:** Coordinates and manages tasks among different agents in the workflow.
+- **Roadmap Generator Agent:** Develops structured roadmaps based on job role inputs and required skills.
+- **Web Scraper Agent:** Collects online resources, articles, and courses related to the job role.
+- **Research Articles Agent:** Searches for recent research papers and academic journals relevant to the job role.
+- **YouTube Link Generator Agent:** Finds educational YouTube videos related to job skills.
 
-## Workflow
+## Getting Started
 
-1. **ChatMistralAI**: Initiates the conversation and gathers input.
-2. **Supervisor**: Moderates the input and coordinates with the Roadmap Generator.
-3. **Roadmap Generator**: Creates a detailed roadmap based on the job role and required skills.
-4. **Web Scraper**: Finds and compiles relevant online resources.
-5. **Research Articles**: Searches for and includes recent academic research.
-6. **YouTube Link Generator**: Adds educational YouTube video links to the roadmap.
+To run this project locally, ensure Flowise AI is installed and running on `localhost:3000`.
+
+### Prerequisites
+
+- Node.js
+- Flowise AI (installed and running on localhost:3000)
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your/repository.git
+   cd repository-name
+
+2. Install Flowise
+   ```bash
+   npm install -g flowise
+
+3. Start the server
+```bash
+npx flowise start
+```
+
+4. install and set up Flowise AI on localhost:3000 before interacting with Yoda from the deployed application at https://yoda-roadmap.vercel.app/. This ensures the AI agents are ready to provide the intended functionality seamlessly.
+
+## Usage
+Once the development server is running and Flowise AI is set up:
+
+- **Open** your browser and navigate to the development server address.
+- **Click** on "Talk to Yoda" to initiate the conversation.
+- **Please** make sure to input the job role you're interested in.
+- **Wait** for Yoda to generate a curated roadmap tailored to your career goals.
