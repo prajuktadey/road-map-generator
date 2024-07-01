@@ -1,0 +1,350 @@
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack sections vertically */
+    }
+
+    .left-section, .right-section {
+        padding: 30px; /* Adjust padding for smaller screens */
+        text-align: center; /* Center-align content */
+    }
+
+    .icons {
+        flex-wrap: wrap; /* Wrap icons if space is limited */
+        justify-content: center; /* Center icons */
+        margin-top: 10px; /* Reduce margin */
+    }
+
+    .cta {
+        margin-top: 30px; /* Increase top margin */
+    }
+
+    .chat-window {
+        width: 100%; /* Full width on smaller screens */
+        max-width: none; /* Remove max-width */
+        height: 60vh; /* Adjust height for usability */
+    }
+
+    .chat-input button {
+        padding: 12px 24px; /* Adjust padding for smaller screens */
+        font-size: 14px; /* Decrease font size for smaller screens */
+    }
+}
+
+/* General styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+    background-color: #000;
+    color: #fff;
+    height: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    font-size: 20px;
+}
+
+.logo {
+    color: #00A3FF;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00A3FF;
+}
+
+.container {
+    display: flex;
+    height: calc(100% - 200px);
+    background-image: url('');
+    background-size: cover;
+    background-position: center;
+}
+
+.left-section, .right-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    font-size: 21px;
+    margin-bottom: -100px;
+}
+
+.left-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.icons {
+    display: flex;
+    margin-top: 20px;
+}
+
+.icon {
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+.cta {
+    display: inline-block;
+    color: #00A3FF;
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    transition: transform 0.2s ease;
+}
+
+.cta:hover {
+    transform: scale(1.05); /* Slightly increase scale on hover */
+    color: #fff; /* Change text color to white on hover */
+}
+
+.arrow {
+    font-size: 1.2em;
+}
+
+.right-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.chat-window {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 80%; /* Increased from 300px to 80% of the right section */
+    max-width: 500px; /* Added a max-width for very large screens */
+    height: 70vh; /* Set height to 70% of the viewport height */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    margin: 90px;
+}
+
+.chat-header {
+    background-color: #f0f0f0;
+    padding: 20px; /* Increased padding */
+    display: flex;
+    align-items: center;
+}
+
+.dot {
+    width: 15px; /* Slightly larger dot */
+    height: 15px;
+    background-color: #00A3FF;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.chat-content {
+    padding: 30px; /* Increased padding */
+    color: #000;
+    flex-grow: 1; /* Allow content to grow and fill space */
+    overflow-y: auto; /* Add scroll if content overflows */
+    font-size: 20px;
+}
+
+.chat-input {
+    display: flex;
+    border-top: 1px solid #e0e0e0;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 15px; /* Increased padding */
+    border: none;
+    outline: none;
+    font-size: 16px; /* Larger font size */
+}
+
+.chat-input button {
+    background-color: #00A3FF;
+    color: white;
+    border: none;
+    padding: 15px 30px; /* Increased padding */
+    cursor: pointer;
+    font-size: 16px; /* Larger font size */
+}
+
+/* About Section */
+.about-section {
+    padding: 0px 20px;
+    background-color: #fff;
+    text-align: center;
+    color: #000; /* Changed text color to black */
+    margin: 1px 0;
+}
+
+.about-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: left;
+    padding-left: 40px;
+    
+}
+
+.about-section p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    text-align: left;
+    padding-left: 40px;
+}
+
+@media (max-width: 768px) {
+    .left-section h1 {
+        font-size: 2em;
+    }
+
+    .left-section p {
+        font-size: 1em;
+    }
+
+    .cta {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+
+    .about-section h2 {
+        font-size: 2em;
+    }
+
+    .about-section p {
+        font-size: 1em;
+    }
+}
+
+
+.about-section {
+    padding: 50px 20px;
+    background-color: #000;
+    color: white;
+    margin: 20px 0; /* Adjust margin for spacing */
+}
+
+.about-section h2 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    text-align: left;
+    font-weight: bold;
+}
+
+
+.cool-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.cool-block {
+    background-color: black;
+    border: 1px solid #00A3FF;
+    border-radius: 50px;
+    padding: 25px;
+    margin: 20px 0; /* Adjust margin for spacing */
+    width: 80%;
+    position: relative;
+    text-align: left;
+}
+
+.cool-block h3 {
+    color: white;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.cool-block p {
+    color: white;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .cool-block {
+        width: 95%;
+    }
+
+    .cool-block h3 {
+        font-size: 1.5em;
+    }
+
+    .cool-block p {
+        font-size: 1em;
+    }
+
+    .about-section h2 {
+        font-size: 2.5em;
+    }
+}
+
+.contact-section {
+    background-color: #000;
+    color: #fff;
+    padding: 50px 70px;
+    text-align: right; /* Adjust text alignment */
+    margin: 50px 0; /* Adjust margin for spacing */
+}
+
+.contact-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.contact-section p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.contact-section ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+.contact-section ul li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.contact-section ul li a {
+    color: #00A3FF;
+    text-decoration: none;
+}
+
+.contact-section ul li a:hover {
+    text-decoration: underline;
+}
+
+
+html {
+    scroll-behavior: smooth;
+  }
